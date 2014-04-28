@@ -1,0 +1,9 @@
+.container{
+    margin: 50px;
+}
+input{
+    max-width: 300px;
+    border-radius:6px;
+    padding: 4px 5px;
+    border: 1px solid gray;
+}
