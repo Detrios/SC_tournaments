@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
         <title>test</title>
 
         <link href="css/jquery-ui-1.10.4.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 
                 <p>
                     <label for="amount">Nb max participants (panel de 4):</label>
-                    <input type="text" readonly="readonly" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+                    <input type="text" readonly="readonly" id="amount" style="border:0;  font-weight:bold;">
                 </p>
 
                 <div id="slider"></div>
@@ -36,6 +36,15 @@
                         <input type="radio" id="radio2" name="radio"><label for="radio2">fixée par organisateur</label>
                         <input type="radio" id="radio3" name="radio"><label for="radio3">au choix des participants</label>
                       </div>
+                </div>
+                
+                <div>
+                    démarrer le tournois :
+                        
+                    <input type="checkbox" id="demarre_complet" />une fois tout les participants inscrits<br />
+                       
+                    <input type="checkbox" id="demarre_date" />  <span id="details_check_demarrage">ou au max</span>  le : <input type="text" id="datepicker">
+                      
                 </div>
                 
                 <p>

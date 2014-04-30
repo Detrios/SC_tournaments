@@ -3,16 +3,23 @@ $(document).ready(
 
             $('img').css("visibility", "hidden");
 
-            $.datepicker.regional[ "fr" ].minDate = 0;
+            $.datepicker.regional[ "fr" ].minDate = 1;
             $.datepicker.regional[ "fr" ].showOtherMonths = true;
             $.datepicker.regional[ "fr" ].selectOtherMonths = true;
             $("#datepicker").datepicker($.datepicker.regional[ "fr" ]);
             
-            $( "#radio" ).buttonset();
+            $( "#radio, #radio2" ).buttonset();
             
             $("#form").submit(function(){
                 alert('ok');
                 return false;
+            });
+            
+            $('#demarre_complet').click(function(){
+                 $('#details_check_demarrage').hide();
+                if( $(this).is(':checked') ){
+                    $('#details_check_demarrage').show();
+                }
             });
 
         }
