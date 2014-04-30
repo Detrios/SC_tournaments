@@ -31,7 +31,7 @@ $(window).load(
             $('img').css("visibility", "visible");
             $('img').hide();
             $('img').fadeIn(1500);
-            make_canvas({id: "c1", w: 200, h: 200});
+            make_canvas({id: "c1", w: 800, h: 600});
 
             //run program
             t = setInterval(function() { //doc javascript
@@ -40,6 +40,7 @@ $(window).load(
                 //Affichage :
                 affiche_pos({x: 1, y: 10}); //ds fonction.js
                 affiche_heure({x: 154, y: 13});
+                affiche_tournois({x: 0, y: 150});
                 //drawRotatedImage(img_hourglass, {x:180,y:40}, --angle2%360);
 
             }, refresh); //boucle toute les x secondes
@@ -51,7 +52,7 @@ $(window).load(
             });
 
             $("#slider").slider({
-                value: 100,
+                value: 4,
                 min: 4,
                 max: 32,
                 step: 4,

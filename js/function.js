@@ -6,6 +6,18 @@ function make_canvas(c){
     ctx.fillStyle = '#cdcdcd';
 };
 
+function affiche_tournois(p){
+    var taille_bloc = 50;
+
+    ctx.rect( p.x,p.y,taille_bloc,taille_bloc);
+    ctx.rect( p.x+taille_bloc*1.3,p.y,taille_bloc,taille_bloc);
+    ctx.strokeStyle = '#ededed';
+    ctx.stroke();
+    
+}
+
+
+
 function affiche_pos(p){
     // p la position où on l'affiche sur le canvas
     //cursor : la globale calculé avec l'evenement on mouse over
